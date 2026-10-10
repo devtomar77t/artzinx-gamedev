@@ -26,6 +26,7 @@ func _ready() -> void:
 
 
 func level_setup():
+	label_3.text = "FLOOR:" + str(EventBus.level_number)
 	level_number = EventBus.level_number
 	kill_enemies()
 	main_lift_setup()
